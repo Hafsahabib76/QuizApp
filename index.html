@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--Quiz Introduction/Welcome Page with Logo and Play Now Button-->
+    <div id="introductionDiv">
+        <button class="button" id="playNowButton" onclick="playVid()" type="button">PLAY NOW</button>
+    </div>
+
+    <!--Quiz Logo Revealing Video after pressing Play Now Button-->
+    <video id="logoVideo" autoplay="autoplay">
+        <source src="media/logo_reveal.mp4" type="video/mp4" />
+    </video>
+
+    <!--Quiz Questions Page-->
+    <div id="quizStartDiv">
+
+        <!-- Quiz Question Div-->
+        <div id="QuestionBoxDiv">
+            <p id="question"></p>
+        </div>
+    
+        <!-- Quiz Option A Button-->
+        <button class="choice" id="BchoiceA" value="A" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
+            <span class="choiceSpan" id="A">A)</span>
+            <p class="choiceText" id="choiceA"></p> 
+        </button>
+    
+        <!-- Quiz Option B Button-->
+        <button class="choice" id="BchoiceB" value="B" onclick="ShowAnswerDiv(event, CorrectAnsDiv);"> 
+            <span class="choiceSpan" id="B">B)</span>
+            <p class="choiceText" id="choiceB"></p> 
+        </button>
+    
+        <!-- Quiz Option C Button-->
+        <button class="choice" id="BchoiceC" value="C" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
+            <span class="choiceSpan" id="C">C)</span>
+            <p class="choiceText" id="choiceC"></p> 
+        </button>
+    
+        <!-- Quiz Option D Button-->
+        <button class="choice" id="BchoiceD" value="D" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
+            <span class="choiceSpan" id="D">D)</span>
+            <p class="choiceText" id="choiceD"></p> 
+        </button>
+
+        <!-- Quiz Correct Answer Div to compare the result with the user selected option-->
+        <div id="CorrectAnsDiv"></div>
+
+    </div>
+
+    <!--Quiz Answer Detail Page after pressing any 1 option-->
+    <div id="answerDiv">
+        <!--Non-stop Background Video-->
+        <video autoplay muted loop id="myVideo">
+            <source src="media/background_did_you_know.mp4" type="video/mp4">
+        </video>
+    
+        <!--Quiz Answer Div-->
+        <div>
+            <!--Div to show answer is right or wrong-->
+            <div id="answerResultDiv">
+            </div>
+    
+            <!--Div to show correct answer detail "didyouknow"-->
+            <div id="answerDetailDiv">
+            </div>
+            
+            <!--Next Question Button or Play Again Button (if reach to the last question)-->
+            <button class="button" id="nextQueButton" type="button"></button>
+            
+            <!--10 seconds Countdown Timer Div-->
+            <div class="circleCountDown" id="countdown"></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>

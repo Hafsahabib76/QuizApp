@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    display: block;
+}
+/*Welcome or Introduction Page Styling*/
+#introductionDiv{
+    background-image: url("../media/quiz.png");
+    height: 56.25vw;
+    width: 100vw;
+}
+
+/*Play Now Button, Next Question Button and Play Again Button Styling*/
+.button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+    margin: auto;
+    width: 17vw;
+    height: 3.5vw;
+    padding:0.5vw 3.5vw 0.5vw;
+    color: #000000;
+    border:0.2vw solid #000;
+    border-radius: 1.5vw;
+    box-sizing: border-box;
+    font-weight:620;
+    background-color: #fff;
+    text-align:center;
+    text-decoration:none;
+    font-size: 1.8vw;
+}
+
+/*Button outline none*/
+button{
+    outline:none;
+ }
+
+/*Button when click border should be 0 or none*/
+button:focus {
+    border: 0;
+ }
+
+/*Logo Revealing Video styling*/
+#logoVideo {
+    height: 56.25vw;
+    width: 100vw;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*Quiz Page Styling and setting background image*/
+#quizStartDiv{
+    background-image: url("../media/Background_questions.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 100vw;
+    height: 56.25vw;
+    width: 100vw;
+    
+}
+
+/*Quiz Question Box styling with gradient colors*/
+#QuestionBoxDiv{
+    width: 40%;
+    background-color: #1E90D7; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #254168 , #1E90D7);
+    border-radius: 0.6vw;
+    margin: auto;
+    margin-top: 12vw;
+    color: #fff;
+    padding: 0.2vw 1vw 0.2vw 1vw;
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+/*Styling Quiz Options Button A,B,C and D*/
+.choice{
+    width: 35%;
+    background-color: #434F65;
+    margin: auto;
+    margin-top: 1.5vw;
+    color: #fff;
+    padding: 0.7vw;
+    font-size: 1.6vw;
+    padding-top: 1.4vw;
+    padding-bottom: 1.4vw;
+    border: none;
+    display: block;
+    text-align: left;
+}
+
+/*Styling Quiz Options left Text A), B), C), and D)*/
+.choiceSpan{
+    display: inline;
+    padding-left: 2vw;
+    cursor: default;
+}
+
+/*Styling Quiz Options Text*/
+.choiceText{
+    display: inline;
+    padding-left: 2vw;
+    cursor: default;
+}
+
+/*Hiding correct answer div from the page*/
+#CorrectAnsDiv{
+    display: none;
+}
+
+/*Styling Answer Page with div transition occur from the right side of the page*/
+#answerDiv{
+    position: absolute;
+    top: 0;
+    right: 100vw;
+    height: 56.25vw;
+    width: 100vw;
+    transition: right 1s ease 1s;
+}
+
+/*Styling Answer Result Div (Right or Wrong)*/
+#answerResultDiv{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 20vw;
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*Styling Answer Detail Text (didyouknow)*/
+#answerDetailDiv{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 18vw;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 1vw;
+    color: #fff;
+}
+
+/*Styling next question btn and play again to show on the right bottom corner of the page*/
+#nextQueButton{
+    background-color: #FFF;
+    border: none;
+    color: #000;
+    padding: 0.6vw 0.1vw;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vw;
+    cursor: pointer;
+    width: 17vw;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 3vw;
+    margin-bottom: 4.5vw;
+}
+
+/*Styling Seconds Countdown timer to show in the circle div*/
+.circleCountDown{
+    background: #183D44;
+    border-radius: 50%;
+    width: 5vw;
+    height: 4vw;
+    border: 0.3vw solid #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 3vw;
+    margin-top: 4vw;
+    color: #fff;
+    font-size: 2.6vw;
+    padding-top: 0.4vw;
+    text-align: center;
+}
