@@ -10,7 +10,7 @@ div{
 }
 /*Welcome or Introduction Page Styling*/
 #introductionDiv{
-    background-image: url("../media/quiz.png");
+    background-image: url("../media/play.png");
     height: 56.25vw;
     width: 100vw;
 }
@@ -20,7 +20,7 @@ div{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 120px;
+    bottom: 220px;
     margin: auto;
     width: 17vw;
     height: 3.5vw;

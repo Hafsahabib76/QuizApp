@@ -26,26 +26,26 @@
     
         <!-- Quiz Option A Button-->
         <button class="choice" id="BchoiceA" value="A" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
-            <span class="choiceSpan" id="A">A)</span>
-            <p class="choiceText" id="choiceA"></p> 
+            <span class="choiceSpan" id="A" onclick="spanClick(event, CorrectAnsDiv);">A)</span>
+            <p class="choiceText" id="choiceA" onclick="optionTextClick(event, CorrectAnsDiv);"></p> 
         </button>
     
         <!-- Quiz Option B Button-->
         <button class="choice" id="BchoiceB" value="B" onclick="ShowAnswerDiv(event, CorrectAnsDiv);"> 
-            <span class="choiceSpan" id="B">B)</span>
-            <p class="choiceText" id="choiceB"></p> 
+            <span class="choiceSpan" id="B" onclick="spanClick(event, CorrectAnsDiv);">B)</span>
+            <p class="choiceText" id="choiceB" onclick="optionTextClick(event, CorrectAnsDiv);"></p> 
         </button>
     
         <!-- Quiz Option C Button-->
         <button class="choice" id="BchoiceC" value="C" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
-            <span class="choiceSpan" id="C">C)</span>
-            <p class="choiceText" id="choiceC"></p> 
+            <span class="choiceSpan" id="C" onclick="spanClick(event, CorrectAnsDiv);">C)</span>
+            <p class="choiceText" id="choiceC" onclick="optionTextClick(event, CorrectAnsDiv);"></p> 
         </button>
     
         <!-- Quiz Option D Button-->
         <button class="choice" id="BchoiceD" value="D" onclick="ShowAnswerDiv(event, CorrectAnsDiv);">
-            <span class="choiceSpan" id="D">D)</span>
-            <p class="choiceText" id="choiceD"></p> 
+            <span class="choiceSpan" id="D"  onclick="spanClick(event, CorrectAnsDiv);">D)</span>
+            <p class="choiceText" id="choiceD" onclick="optionTextClick(event, CorrectAnsDiv);"></p> 
         </button>
 
         <!-- Quiz Correct Answer Div to compare the result with the user selected option-->
